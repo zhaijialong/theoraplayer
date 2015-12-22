@@ -21,6 +21,8 @@ the terms of the BSD license: http://opensource.org/licenses/BSD-3-Clause
 
 #ifdef _WINRT
 #include <wrl.h>
+#include <windows.system.h>
+#include <windows.system.threading.h>
 #endif
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -223,9 +225,9 @@ void TheoraThread::join()
 #else
 	IAsyncAction^ action = ((TheoraAsyncActionWrapper*)mId)->mAsyncAction;
 	int i = 0;
-	while (action->Status != AsyncStatus::Completed &&
-		action->Status != AsyncStatus::Canceled &&
-		action->Status != AsyncStatus::Error &&
+	while (action->Status != Windows::Foundation::AsyncStatus::Completed &&
+		action->Status != Windows::Foundation::AsyncStatus::Canceled &&
+		action->Status != Windows::Foundation::AsyncStatus::Error &&
 		i < 100)
 	{
 		_psleep(50);
@@ -235,9 +237,9 @@ void TheoraThread::join()
 	{
 		i = 0;
 		action->Cancel();
-		while (action->Status != AsyncStatus::Completed &&
-			action->Status != AsyncStatus::Canceled &&
-			action->Status != AsyncStatus::Error &&
+		while (action->Status != Windows::Foundation::AsyncStatus::Completed &&
+			action->Status != Windows::Foundation::AsyncStatus::Canceled &&
+			action->Status != Windows::Foundation::AsyncStatus::Error &&
 			i < 100)
 		{
 			_psleep(50);

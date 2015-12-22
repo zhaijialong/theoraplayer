@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\TheoraAsync.cpp" />
+    <ClCompile Include="..\..\src\TheoraAudioInterface.cpp" />
+    <ClCompile Include="..\..\src\TheoraAudioPacketQueue.cpp" />
+    <ClCompile Include="..\..\src\TheoraDataSource.cpp" />
+    <ClCompile Include="..\..\src\TheoraException.cpp" />
+    <ClCompile Include="..\..\src\TheoraFrameQueue.cpp" />
+    <ClCompile Include="..\..\src\TheoraTimer.cpp" />
+    <ClCompile Include="..\..\src\TheoraUtil.cpp" />
+    <ClCompile Include="..\..\src\TheoraVideoClip.cpp" />
+    <ClCompile Include="..\..\src\TheoraVideoFrame.cpp" />
+    <ClCompile Include="..\..\src\TheoraVideoManager.cpp" />
+    <ClCompile Include="..\..\src\TheoraWorkerThread.cpp" />
+    <ClCompile Include="..\..\src\Theora\TheoraVideoClip_Theora.cpp" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\compare.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\compare_common.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\compare_gcc.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\compare_posix.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\compare_win.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_argb.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_from.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_from_argb.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_jpeg.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_to_argb.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\convert_to_i420.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\cpu_id.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\mjpeg_decoder.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\mjpeg_validate.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\planar_functions.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\rotate.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\rotate_argb.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\rotate_mips.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\rotate_neon.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\rotate_neon64.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_any.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_common.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_gcc.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_mips.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_neon.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_neon64.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_posix.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\row_win.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_any.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_argb.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_argb_neon.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_common.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_gcc.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_mips.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_neon.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_neon64.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_posix.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\scale_win.cc" />
+    <ClCompile Include="..\..\src\YUV\libyuv\src\video_common.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\YUV\libyuv\src\row_x86.asm" />
+    <None Include="..\..\src\YUV\libyuv\src\x86inc.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ogg\msvc\libogg\libogg.vcxproj">
+      <Project>{a6cee246-64bb-4535-a5ae-e0b772770e38}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\theora\msvc\libtheora\libtheora.vcxproj">
+      <Project>{8daf49b0-71c3-4de9-b35a-435afe8263c9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\vorbis\msvc\libvorbis\libvorbis.vcxproj">
+      <Project>{0f1d254e-bbb0-4c25-8cde-649c0df8d53f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\YUV\libyuv_ex\libyuv_ex.vcxproj">
+      <Project>{a4205135-1d28-44d9-8ac3-ecabb1390e65}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{cf619f6f-d9bb-4408-919c-57cd2f1137f7}</ProjectGuid>
+    <Keyword>StaticLibrary</Keyword>
+    <ProjectName>libtheoraplayer</ProjectName>
+    <RootNamespace>libtheoraplayer</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./../include;../../include/theoraplayer;../../../ogg/include;../../../xal/lib/ogg/include;../../../vorbis/include;../../../xal/lib/vorbis/include;../../../theora/include;../../src/Theora;../../src/YUV;../../src/YUV/C;../../src/YUV/libyuv;../../src/YUV/libyuv/include;../../src/YUV/android;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>THEORAVIDEO_EXPORTS;_WINRT;_CRT_SECURE_NO_WARNINGS;__THEORA;_YUV_LIBYUV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
